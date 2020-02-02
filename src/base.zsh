@@ -1,7 +1,7 @@
 #!/usr/bin/env ksh
 # -*- coding: utf-8 -*-
 
-function rsync::install {
+function apps::rsync::install {
     if ! type -p brew > /dev/null; then
         message_error "it's neccesary brew, add: luismayta/zsh-brew"
     fi
@@ -65,7 +65,7 @@ function apps::has_dependences {
     return
 }
 
-if ! type -p rsync > /dev/null; then rync::install; fi
+if ! type -p rsync > /dev/null; then apps::rync::install; fi
 if [ "$(apps::has_node)" -eq 0 ]; then apps::node::install; fi
 if [ "$(apps::has_yarn)" -eq 0 ]; then apps::yarn::install; fi
 if [ "$(apps::has_nativefier)" -eq 0 ]; then apps::nativefier::install; fi
