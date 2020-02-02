@@ -18,6 +18,12 @@ function apps::yarn::install {
     message_success "Installed yarn"
 }
 
+function apps::nativefier::install {
+    message_info "Installing natifier"
+    yarn global add nativefier
+    message_success "Installed natifier"
+}
+
 function apps::has_node {
     if ! type -p node > /dev/null; then
         echo 0
@@ -34,6 +40,14 @@ function apps::has_yarn {
     echo 1
 }
 
+function apps::has_nativefier {
+    if ! type -p nativefier > /dev/null; then
+        echo 0
+        return
+    fi
+    echo 1
+}
+
 function apps::has_dependences {
     if [ "$(apps::has_yarn)" -eq 1 ] && [ "$(apps::has_node)" -eq 1 ]; then
         echo 1
@@ -44,3 +58,4 @@ function apps::has_dependences {
 
 if [ "$(apps::has_node)" -eq 0 ]; then apps::node::install; fi
 if [ "$(apps::has_yarn)" -eq 0 ]; then apps::yarn::install; fi
+if [ "$(apps::has_nativefier)" -eq 0 ]; then apps::nativefier::install; fi
