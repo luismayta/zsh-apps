@@ -5,9 +5,9 @@ function apps::rsync::install {
     if ! type -p brew > /dev/null; then
         message_error "it's neccesary brew, add: luismayta/zsh-brew"
     fi
-    message_info "Installing rsync for ${apps_package_name}"
+    message_info "Installing rsync for ${APPS_PACKAGE_NAME}"
     brew install rsync
-    message_success "Installed rsync ${apps_package_name}"
+    message_success "Installed rsync ${APPS_PACKAGE_NAME}"
 }
 
 function apps::node::install {
