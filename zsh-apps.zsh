@@ -7,7 +7,7 @@
 # Authors:
 #   Luis Mayta <slovacus@gmail.com>
 #
-export apps_package_name="apps"
+export APPS_PACKAGE_NAME="apps"
 APPS_PLUGIN_DIR="$(dirname "${0}")"
 export APPS_SOURCE_PATH="${APPS_PLUGIN_DIR}"/src
 
