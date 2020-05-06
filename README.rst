@@ -1,6 +1,8 @@
 zsh-apps
 ========
 
+Apps and tools for zsh
+
 |Build Status| |GitHub issues| |GitHub license|
 
 :Version: 0.0.0
@@ -25,7 +27,6 @@ Dependencies
     https://github.com/mafredri/zsh-async
     https://github.com/luismayta/zsh-notify
     https://github.com/luismayta/zsh-functions
-
 
 Installation
 ------------
@@ -177,7 +178,7 @@ Made with :coffee: and :pizza: by `Luis Mayta`_ and `equipindustry`_.
 
 .. Footer:
 .. |linkedin| image:: http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png
-    :target: https://www.linkedin.com/in/luismayta
+    :target: https://pe.linkedin.com/in/luismayta
 .. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/luismayta/zsh-apps/readme
     :target: https://github.com/luismayta/zsh-apps
 .. |made| image:: https://img.shields.io/badge/Made%20with-Zsh-1f425f.svg
