@@ -19,4 +19,7 @@ export APPS_MESSAGE_NOT_FOUND="this not found installed"
 source "${APPS_SOURCE_PATH}"/base.zsh
 
 # shellcheck source=/dev/null
+source "${APPS_SOURCE_PATH}"/utils.zsh
+
+# shellcheck source=/dev/null
 source "${APPS_SOURCE_PATH}"/apps.zsh
