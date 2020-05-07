@@ -3,7 +3,7 @@
 
 function apps::rsync::install {
     if ! type -p brew > /dev/null; then
-        message_warning "it's neccesary brew, add: luismayta/zsh-brew"
+        message_warning "${APP_MESSAGE_BREW}"
         return
     fi
     message_info "Installing rsync for ${APPS_PACKAGE_NAME}"
@@ -13,7 +13,7 @@ function apps::rsync::install {
 
 function apps::node::install {
     if ! type nvm > /dev/null; then
-        message_warning "is Neccesary install nvm, please install antibody bundle luismayta/zsh-nvm branch:develop"
+        message_warning "${APP_MESSAGE_NVM}"
         return
     fi
     message_info "Install version of node"
