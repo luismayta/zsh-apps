@@ -12,13 +12,9 @@ function apps::jira::install {
 }
 
 function apps::calendar::install {
-    local name name_path
+    local name url architecture
     name="GoogleCalendar"
-    name_path="/Applications/${name}.app"
-    mkdir -p "${name_path}"
-    cd /var/tmp/ || cd - && \
-            nativefier --name "${name}" \
-                       --single-instance \
-                       "https://calendar.google.com/calendar/r" && \
-            rsync -a ./"${name}"-darwin-x64/"${name}".app/ "${name_path}/" && cd - || exit
+    url="https://calendar.google.com/calendar/r"
+    architecture="darwin-x64"
+    apps::utils::native:make "${name}" "${url}" "${architecture}"
 }
