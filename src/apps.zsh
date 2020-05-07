@@ -17,3 +17,10 @@ function apps::calendar::install {
     url="https://calendar.google.com/calendar/r"
     apps::utils::native:make "${name}" "${url}"
 }
+
+function apps::translate::install {
+    local name url
+    name="GoogleTranslate"
+    url="https://translate.google.com"
+    apps::utils::native:make "${name}" "${url}"
+}
