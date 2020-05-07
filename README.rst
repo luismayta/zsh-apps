@@ -158,7 +158,7 @@ Made with :coffee: and :pizza: by `Luis Mayta`_ and `equipindustry`_.
 
 
 .. _`Github`: https://github.com/luismayta
-.. _`Linkedin`: https://www.linkedin.com/in/luismayta
+.. _`Linkedin`: https://pe.linkedin.com/in/luismayta
 .. _`Email`: slovacus@gmail.com
     :target: mailto:slovacus@gmail.com
 .. _`Twitter`: https://twitter.com/slovacus
