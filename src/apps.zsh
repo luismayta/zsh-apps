@@ -12,9 +12,8 @@ function apps::jira::install {
 }
 
 function apps::calendar::install {
-    local name url architecture
+    local name url
     name="GoogleCalendar"
     url="https://calendar.google.com/calendar/r"
-    architecture="darwin-x64"
-    apps::utils::native:make "${name}" "${url}" "${architecture}"
+    apps::utils::native:make "${name}" "${url}"
 }
