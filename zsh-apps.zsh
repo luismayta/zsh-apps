@@ -18,6 +18,24 @@ export APPS_MESSAGE_NOT_FOUND="this not found installed"
 # shellcheck source=/dev/null
 source "${APPS_SOURCE_PATH}"/base.zsh
 
+# cross::os functions for osx and linux
+function cross::os {
+
+    case "${OSTYPE}" in
+        darwin*)
+            # shellcheck source=/dev/null
+            source "${APPS_SOURCE_PATH}"/osx.zsh
+            ;;
+        linux*)
+            # shellcheck source=/dev/null
+            source "${APPS_SOURCE_PATH}"/linux.zsh
+            ;;
+    esac
+
+}
+
+cross::os
+
 # shellcheck source=/dev/null
 source "${APPS_SOURCE_PATH}"/utils.zsh
 
