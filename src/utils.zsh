@@ -5,16 +5,14 @@
 # url
 # architecture
 function apps::utils::native:make {
-    local name name_path url 
+    local name name_path url
     name="${1}"
     url="${2}"
     name_path="${APPS_APPLICATION_PATH}/${name}.app"
-    mkdir -p "${name_path}"
+    rm -rf "${name_path}" && mkdir -p "${name_path}"
     cd /var/tmp/ || cd - && \
             nativefier --name "${name}" \
-                       --single-instance \
+                --full-screen --disable-dev-tools --single-instance \
                        "${url}" && \
-            rsync -a ./"${name}"-"${APPS_ARCHITECTURE_NAME}"/"${name}".app/ "${name_path}/" && cd - || exit
+            rsync -azvhP --remove-source-files ./"${name}"-"${APPS_ARCHITECTURE_NAME}"/"${name}".app/ "${name_path}/" && cd - || exit
 }
-
-
