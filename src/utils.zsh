@@ -12,6 +12,7 @@ function apps::utils::native:make {
     rm -rf "${name_path}" && mkdir -p "${name_path}"
     cd /var/tmp/ || cd - && \
             nativefier --name "${name}" \
+                --internal-urls "accounts.google.com" \
                 --full-screen --disable-dev-tools --single-instance \
                        "${url}" && \
             rsync -azvhP --remove-source-files ./"${name}"-"${APPS_ARCHITECTURE_NAME}"/"${name}".app/ "${name_path}/" && cd - || exit
