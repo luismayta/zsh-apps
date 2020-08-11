@@ -11,6 +11,13 @@ function apps::jira::install {
             rsync -azvhP --remove-source-files ./Jira-darwin-x64/Jira.app/ /Applications/Jira.app/ && cd - || exit
 }
 
+function apps::devdocs::install {
+    local name url
+    name="DevDocs"
+    url="https://devdocs.io"
+    apps::utils::native:make "${name}" "${url}"
+}
+
 function apps::calendar::install {
     local name url
     name="GoogleCalendar"
