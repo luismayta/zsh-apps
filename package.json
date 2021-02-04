@@ -1,6 +1,6 @@
 {
   "name": "@luismayta/zsh-apps",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "zsh-apps for zsh",
   "repository": "ssh://git@github.com/luismayta/zsh-apps.git",
   "author": "Luis Mayta <slovacus@gmail.com>",
