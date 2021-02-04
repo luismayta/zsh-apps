@@ -8,14 +8,14 @@ if [ -z "$BRANCHES_TO_SKIP" ]; then
     BRANCHES_TO_SKIP=(main master develop test)
 fi
 
-re='^[0-9]+$'
+REGEX_VALIDATION="^[0-9]+$"
 BRANCH_NAME=$(git symbolic-ref --short HEAD)
 BRANCH_NAME="${BRANCH_NAME##*/}"
 
 BRANCH_EXCLUDED=$(printf "%s\\n" "${BRANCHES_TO_SKIP[@]}" | grep -c "^$BRANCH_NAME$")
 BRANCH_IN_COMMIT=$(grep -c "\\[$BRANCH_NAME\]" "${1}")
 
-if [ -n "${BRANCH_NAME}" ] && [ "${BRANCH_NAME}" =~ $re ] ; then
+if [ -n "${BRANCH_NAME}" ] && [[ "${BRANCH_NAME}" =~ "${REGEX_VALIDATION}" ]] ; then
     BRANCH_NAME="#${BRANCH_NAME}"
 fi
 
