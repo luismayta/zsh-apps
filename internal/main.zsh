@@ -18,8 +18,8 @@ function apps::internal::main::factory {
 
 apps::internal::main::factory
 
-if ! type -p curl > /dev/null; then core::curl::install; fi
-if ! type -p rsync > /dev/null; then core::rsync::install; fi
-if ! type -p node > /dev/null; then core::node::install; fi
-if ! type -p yarn > /dev/null; then core::yarn::install; fi
-if ! type -p nativefier > /dev/null; then core::nativefier::install; fi
+if ! core::exists curl; then  core::install curl; fi
+if ! core::exists rsync; then core::install rsync; fi
+if ! core::exists node; then core::install node; fi
+if ! core::exists yarn; then core::install yarn; fi
+if ! core::exists nativefier; then core::install nativefier; fi

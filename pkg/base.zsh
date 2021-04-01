@@ -6,9 +6,5 @@ function apps::upgrade {
 }
 
 function apps::install {
-    message_warning "method not implement"
-}
-
-function apps::post_install {
-    message_warning "method not implement"
+    apps::internal::native::make "${1}" "${2}"
 }
