@@ -13,9 +13,9 @@ function apps::internal::native::make {
     cd /var/tmp/ || cd - && \
             nativefier --name "${name}" \
                 --internal-urls "accounts.google.com" \
-                --full-screen --disable-dev-tools --singe-instance \
+                --full-screen --disable-dev-tools --single-instance \
                        "${url}" && \
-            rsync -azvhP --remove-source-files ./"${name}"-"${APPS_ARCHITECTURE_NAME}"/"${name}".app/ "${name_path}/" && cd - || exit
+            rsync -azvhP --remove-source-files ./"${name}"-"${APPS_ARCHITECTURE_NAME}"/"${name}".app/ "${name_path}/" && cd - || return
 }
 
 function apps::internal::jira::install {
