@@ -10,7 +10,7 @@ function apps::internal::native::make {
     url="${2}"
     name_path="${APPS_APPLICATION_PATH}/${name}.app"
     rm -rf "${name_path}" && mkdir -p "${name_path}"
-    cd /var/tmp/ || cd - && \
+    cd "${APPS_PATH_TMP}" || cd - && \
             nativefier --name "${name}" \
                 --internal-urls "accounts.google.com" \
                 --full-screen --disable-dev-tools --single-instance \
@@ -20,7 +20,7 @@ function apps::internal::native::make {
 
 function apps::internal::jira::install {
     rm -rf /Applications/Jira.app && mkdir -p /Applications/Jira.app
-    cd /var/tmp/ || cd - && \
+    cd "${APPS_PATH_TMP}" || cd - && \
             nativefier --name "Jira" \
             --internal-urls "accounts.google.com|id.atlassian.com|endustria.atlassian.net" \
             --full-screen --disable-dev-tools --single-instance \
