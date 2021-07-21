@@ -18,14 +18,19 @@ function apps::internal::native::make {
             rsync -azvhP --remove-source-files ./"${name}"-"${APPS_ARCHITECTURE_NAME}"/"${name}".app/ "${name_path}/" && cd - || return
 }
 
+# url
 function apps::internal::jira::install {
-    rm -rf /Applications/Jira.app && mkdir -p /Applications/Jira.app
+    local name name_path url
+    name="Jira"
+    url="${1}"
+    name_path="${APPS_APPLICATION_PATH}/${name}.app"
+    rm -rf "${name_path}" && mkdir -p "${name_path}"
     cd "${APPS_PATH_TMP}" || cd - && \
-            nativefier --name "Jira" \
-            --internal-urls "accounts.google.com|id.atlassian.com|endustria.atlassian.net" \
-            --full-screen --disable-dev-tools --single-instance \
-           "https://endustria.atlassian.net/secure/BrowseProjects.jspa" &&
-            rsync -azvhP --remove-source-files ./Jira-darwin-x64/Jira.app/ /Applications/Jira.app/ && cd - || exit
+            nativefier --name "${name}" \
+                --internal-urls "accounts.google.com|id.atlassian.com|${url}" \
+                --full-screen --disable-dev-tools --single-instance \
+                       "${url}" && \
+            rsync -azvhP --remove-source-files ./"${name}"-"${APPS_ARCHITECTURE_NAME}"/"${name}".app/ "${name_path}/" && cd - || return
 }
 
 function apps::internal::devdocs::install {
