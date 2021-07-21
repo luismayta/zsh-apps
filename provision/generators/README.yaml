@@ -21,15 +21,24 @@ github_repo: luismayta/zsh-apps
 
 # Badges to display
 badges:
-  - name: Lint
-    image: https://github.com/luismayta/zsh-apps/actions/workflows/lint.yml/badge.svg?branch=develop
-    url: https://github.com/luismayta/zsh-apps/actions
-  - name: Issues
-    image: https://img.shields.io/github/issues/luismayta/zsh-apps.svg
-    url: https://github.com/luismayta/zsh-apps/issues
   - name: Latest Release
-    image: https://img.shields.io/github/release/luismayta/zsh-apps.svg
-    url: https://github.com/luismayta/zsh-apps/releases
+    image: https://img.shields.io/github/release/luismayta/zsh-aps
+    url: https://github.com/luismayta/zsh-aps/releases
+  - name: Lint
+    image: https://img.shields.io/github/workflow/status/luismayta/zsh-aps/lint-code
+    url: https://github.com/luismayta/zsh-aps/actions
+  - name: Issues
+    image: https://img.shields.io/github/issues/luismayta/zsh-aps
+    url: https://github.com/luismayta/zsh-aps/issues
+  - name: Conventional Commits
+    image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
+    url: https://conventionalcommits.org
+  - name: KeepAChangelog
+    image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
+    url: https://keepachangelog.com
+  - name: Beacon
+    image: https://ga-beacon.appspot.com/G-MZEK48EGE8/zsh-aps/readme
+    url: https://github.com/luismayta/zsh-aps
 
 # Short description of this project
 description: |-
@@ -40,9 +49,6 @@ requirements: |-
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
   * [zsh-core](https://github.com/hadenlabs/zsh-core)
-
-usage: |
-
 
 installation:
   - 'docs/include/installation/oh-my-zsh.md'
