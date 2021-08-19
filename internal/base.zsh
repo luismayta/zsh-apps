@@ -10,12 +10,13 @@ function apps::internal::native::make {
     url="${2}"
     name_path="${APPS_APPLICATION_PATH}/${name}.app"
     rm -rf "${name_path}" && mkdir -p "${name_path}"
-    cd "${APPS_PATH_TMP}" || cd - && \
-            nativefier --name "${name}" \
+    nativefier "${url}" \
+                "${APPS_PATH_TMP}/${name}-${APPS_ARCHITECTURE_NAME}/${name}".app/ \
+                --name "${name}" \
                 --internal-urls "accounts.google.com" \
                 --full-screen --disable-dev-tools --single-instance \
-                       "${url}" && \
-            rsync -azvhP --remove-source-files ./"${name}"-"${APPS_ARCHITECTURE_NAME}"/"${name}".app/ "${name_path}/" && cd - || return
+                        && \
+            rsync -azvhP --remove-source-files "${APPS_PATH_TMP}/${name}-${APPS_ARCHITECTURE_NAME}/${name}".app/ "${name_path}/"
 }
 
 # url
@@ -25,12 +26,13 @@ function apps::internal::jira::install {
     url="${1}"
     name_path="${APPS_APPLICATION_PATH}/${name}.app"
     rm -rf "${name_path}" && mkdir -p "${name_path}"
-    cd "${APPS_PATH_TMP}" || cd - && \
-            nativefier --name "${name}" \
-                --internal-urls "accounts.google.com|id.atlassian.com|${url}" \
+    nativefier "${url}" \
+                "${APPS_PATH_TMP}/${name}-${APPS_ARCHITECTURE_NAME}/${name}".app/ \
+                --name "${name}" \
+                --internal-urls "accounts.google.com" \
                 --full-screen --disable-dev-tools --single-instance \
-                       "${url}" && \
-            rsync -azvhP --remove-source-files ./"${name}"-"${APPS_ARCHITECTURE_NAME}"/"${name}".app/ "${name_path}/" && cd - || return
+                        && \
+            rsync -azvhP --remove-source-files "${APPS_PATH_TMP}/${name}-${APPS_ARCHITECTURE_NAME}/${name}".app/ "${name_path}/"
 }
 
 function apps::internal::devdocs::install {
