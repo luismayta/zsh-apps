@@ -25,9 +25,9 @@ AWS_VAULT ?= ${TEAM}
 PROJECT := zsh-aps
 
 PYTHON_VERSION=3.8.0
-NODE_VERSION=14.16.1
 PYENV_NAME="${PROJECT}"
 GIT_IGNORES:=python,node,go,zsh
+GIT_IGNORES_CUSTOM:= bin
 GI:=gi
 
 # issues reviewers
