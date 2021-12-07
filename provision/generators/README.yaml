@@ -10,6 +10,10 @@ name: zsh-apps
 email:
   support: support@hadenlabs.com
 
+confluence:
+  space: ZshPluginTemplate
+  title: Project
+
 # Logo for this project
 #logo: docs/logo.png
 
@@ -22,33 +26,31 @@ github_repo: luismayta/zsh-apps
 # Badges to display
 badges:
   - name: Latest Release
-    image: https://img.shields.io/github/release/luismayta/zsh-aps
-    url: https://github.com/luismayta/zsh-aps/releases
+    image: https://img.shields.io/github/release/luismayta/zsh-apps
+    url: https://github.com/luismayta/zsh-apps/releases
   - name: Lint
-    image: https://img.shields.io/github/workflow/status/luismayta/zsh-aps/lint-code
-    url: https://github.com/luismayta/zsh-aps/actions
-  - name: Issues
-    image: https://img.shields.io/github/issues/luismayta/zsh-aps
-    url: https://github.com/luismayta/zsh-aps/issues
+    image: https://img.shields.io/github/workflow/status/luismayta/zsh-apps/lint-code
+    url: https://github.com/luismayta/zsh-apps/actions?workflow=lint-code
+  - name: pre-commit
+    image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+    url: https://github.com/pre-commit/pre-commit
   - name: Conventional Commits
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
   - name: KeepAChangelog
     image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
     url: https://keepachangelog.com
-  - name: Beacon
-    image: https://ga-beacon.appspot.com/G-MZEK48EGE8/zsh-aps/readme
-    url: https://github.com/luismayta/zsh-aps
-
-# Short description of this project
-description: |-
-  zsh-apps plugin for zsh.
 
 requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
   * [zsh-core](https://github.com/hadenlabs/zsh-core)
+  - [taskfile](https://github.com/go-task/task)
+
+# Short description of this project
+description: |-
+  zsh-apps for project
 
 installation:
   - 'docs/include/installation/oh-my-zsh.md'
