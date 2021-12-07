@@ -1,3 +1,14 @@
+<!-- Space: ZshPluginTemplate -->
+<!-- Parent: Project -->
+<!-- Title: Project Installation Oh-My-Zsh -->
+
+<!-- Label: ZshPluginTemplate -->
+<!-- Label: Project -->
+<!-- Label: Installation -->
+<!-- Label: Oh-My-Zsh -->
+<!-- Include: docs/disclaimer.md -->
+<!-- Include: ac:toc -->
+
 ### [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) users
 
 If you're using [oh-my-zsh](https://gitub.com/robbyrussell/oh-my-zsh), install this plugin by doing the following:

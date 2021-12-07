@@ -1,3 +1,7 @@
+<!-- Space: ZshPluginTemplate -->
+<!-- Parent: Project -->
+<!-- Title: Authors -->
+
 # Authors
 
 ## Leads
