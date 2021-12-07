@@ -1,9 +1,11 @@
 <!-- Space: ZshPluginTemplate -->
 <!-- Parent: Project -->
-<!-- Title: Faq -->
+<!-- Title: Commands -->
 
-<!-- Label: Faq -->
+<!-- Label: ZshPluginTemplate -->
+<!-- Label: Project -->
+<!-- Label: Commands -->
 <!-- Include: docs/disclaimer.md -->
 <!-- Include: ac:toc -->
 
-# Faq
+## Commands
