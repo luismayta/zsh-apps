@@ -1,8 +1,8 @@
-<!-- Space: ZshPluginTemplate -->
+<!-- Space: ZshApss -->
 <!-- Parent: Project -->
 <!-- Title: Project Installation Antibody -->
 
-<!-- Label: ZshPluginTemplate -->
+<!-- Label: ZshApss -->
 <!-- Label: Project -->
 <!-- Label: Installation -->
 <!-- Include: docs/disclaimer.md -->

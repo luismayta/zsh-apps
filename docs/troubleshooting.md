@@ -1,8 +1,8 @@
-<!-- Space: ZshPluginTemplate -->
+<!-- Space: ZshApss -->
 <!-- Parent: Project -->
 <!-- Title: Troubleshooting -->
 
-<!-- Label: ZshPluginTemplate -->
+<!-- Label: ZshApss -->
 <!-- Label: Project -->
 <!-- Label: Troubleshooting -->
 <!-- Include: docs/disclaimer.md -->

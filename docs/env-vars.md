@@ -1,8 +1,8 @@
-<!-- Space: ZshPluginTemplate -->
+<!-- Space: ZshApss -->
 <!-- Parent: Project -->
 <!-- Title: Env Vars -->
 
-<!-- Label: ZshPluginTemplate -->
+<!-- Label: ZshApss -->
 <!-- Label: Project -->
 <!-- Label: Env Vars -->
 <!-- Include: docs/disclaimer.md -->

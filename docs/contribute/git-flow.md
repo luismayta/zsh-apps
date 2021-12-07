@@ -1,8 +1,8 @@
-<!-- Space: ZshPluginTemplate -->
+<!-- Space: ZshApss -->
 <!-- Parent: Project -->
 <!-- Title: Contributing GitFlow -->
 
-<!-- Label: ZshPluginTemplate -->
+<!-- Label: ZshApss -->
 <!-- Label: Project -->
 <!-- Label: Contributing -->
 <!-- Label: GitFlow -->
