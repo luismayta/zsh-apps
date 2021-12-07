@@ -13,10 +13,10 @@ function apps::internal::native::make {
     rm -rf "${name_path}" && mkdir -p "${name_path}"
     nativefier "${url}" \
                 "${APPS_PATH_TMP}/" \
-                --upgrade \
                 --name "${name}" \
+                --user-agent "${APPS_USER_AGENT}" \
                 --internal-urls "accounts.google.com" \
-                --full-screen --disable-dev-tools --single-instance \
+                --full-screen --disable-dev-tools \
                         && \
             rsync -avhP --remove-source-files "${tmp_path}/" "${name_path}/"
 }
@@ -32,8 +32,9 @@ function apps::internal::jira::install {
     nativefier "${url}" \
                 "${APPS_PATH_TMP}/" \
                 --name "${name}" \
-                --internal-urls "accounts.google.com" \
-                --full-screen --disable-dev-tools --single-instance \
+                --user-agent "${APPS_USER_AGENT}" \
+                --internal-urls "accounts.google.com|id.atlassian.com|${url}" \
+                --full-screen --disable-dev-tools \
                         && \
             rsync -avhP --remove-source-files "${tmp_path}/" "${name_path}/"
 }
