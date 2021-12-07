@@ -1,8 +1,8 @@
-<!-- Space: ZshPluginTemplate -->
+<!-- Space: ZshApss -->
 <!-- Parent: Project -->
 <!-- Title: Contributing -->
 
-<!-- Label: ZshPluginTemplate -->
+<!-- Label: ZshApss -->
 <!-- Label: Project -->
 <!-- Label: Contributing -->
 <!-- Include: docs/disclaimer.md -->
