@@ -1,11 +1,10 @@
-<!-- Space: ZshApss -->
-<!-- Parent: Project -->
-<!-- Title: Releasing -->
-
-<!-- Label: ZshApss -->
+<!-- Space: Projects -->
+<!-- Parent: ZshApps -->
+<!-- Title: Releasing ZshApps -->
+<!-- Label: ZshApps -->
 <!-- Label: Project -->
 <!-- Label: Releasing -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 # Releasing

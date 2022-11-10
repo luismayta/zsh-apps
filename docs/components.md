@@ -1,11 +1,10 @@
-<!-- Space: ZshApss -->
-<!-- Parent: Project -->
-<!-- Title: Components -->
-
-<!-- Label: ZshApss -->
+<!-- Space: Projects -->
+<!-- Parent: ZshApps -->
+<!-- Title: Components ZshApps -->
+<!-- Label: ZshApps -->
 <!-- Label: Project -->
 <!-- Label: Components -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 # components
