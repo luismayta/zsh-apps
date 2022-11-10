@@ -1,11 +1,10 @@
-<!-- Space: ZshApss -->
-<!-- Parent: Project -->
-<!-- Title: Env Vars -->
-
-<!-- Label: ZshApss -->
+<!-- Space: Projects -->
+<!-- Parent: ZshApps -->
+<!-- Title: EnvVars ZshApps -->
+<!-- Label: ZshApps -->
 <!-- Label: Project -->
-<!-- Label: Env Vars -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Label: EnvVars -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 ---

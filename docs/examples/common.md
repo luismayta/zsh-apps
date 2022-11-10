@@ -1,9 +1,8 @@
-<!-- Space: ZshApss -->
-<!-- Parent: Project -->
-<!-- Title: Project Examples -->
-
+<!-- Space: Projects -->
+<!-- Parent: ZshApps -->
+<!-- Title: Examples ZshApps -->
 <!-- Label: Examples -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: ./../disclaimer.md -->
 <!-- Include: ac:toc -->
 
 ### common
