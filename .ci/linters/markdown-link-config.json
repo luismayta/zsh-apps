@@ -1,5 +1,5 @@
 {
-  "baseUrl": "https://github.com/luismayta/zsh-aps",
+  "baseUrl": "https://github.com/luismayta/zsh-apps",
   "ignorePatterns": [
     {
       "pattern": "^https://hadenlabs.com"
