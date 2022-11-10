@@ -1,6 +1,3 @@
- <!-- Space: ZshApss -->
-<!-- Title: Project -->
-
 <!--
 
 
@@ -15,19 +12,17 @@
 
   -->
 
-[![Latest Release](https://img.shields.io/github/release/luismayta/zsh-apps)](https://github.com/luismayta/zsh-apps/releases) [![Lint](https://img.shields.io/github/workflow/status/luismayta/zsh-apps/lint-code)](https://github.com/luismayta/zsh-apps/actions?workflow=lint-code) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
+[![Latest Release](https://img.shields.io/github/release/luismayta/zsh-apps)](https://github.com/luismayta/zsh-apps/releases) [![Lint](https://img.shields.io/github/workflow/status/luismayta/zsh-apps/lint-code)](https://github.com/luismayta/zsh-apps/actions?workflow=lint-code) [![CI](https://img.shields.io/github/workflow/status/luismayta/zsh-apps/ci)](https://github.com/luismayta/zsh-apps/actions?workflow=ci) [![Test](https://img.shields.io/github/workflow/status/luismayta/zsh-apps/test)](https://github.com/luismayta/zsh-apps/actions?workflow=test) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
 
 # zsh-apps
-
-zsh-apps for project
 
 ## Requirements
 
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-- [zsh-core](https://github.com/hadenlabs/zsh-core)
-
-* [taskfile](https://github.com/go-task/task)
+- [gomplate](https://github.com/hairyhenderson/gomplate)
+- [python](https://www.python.org)
+- [taskfile](https://github.com/go-task/task)
 
 ## Installation
 
@@ -93,6 +88,27 @@ to your `.zshrc` where you're adding your other plugins.
 2.  Either open a new terminal to force zsh to load the new plugin, or run `antibody bundle luismayta/zsh-apps` in a running zsh session.
 3.  Enjoy!
 
+## Usage
+
+# How to use this project
+
+## Replace name project to New Project
+
+```bash
+agr 'zsh-apps' 'new-project'
+```
+
+## Examples
+
+<!-- Space: Projects -->
+<!-- Parent: ZshApps -->
+<!-- Title: Examples ZshApps -->
+<!-- Label: Examples -->
+<!-- Include: ./../disclaimer.md -->
+<!-- Include: ac:toc -->
+
+### common
+
  <!-- Space: ZshApss -->
 <!-- Parent: Project -->
 <!-- Title: Functions -->
@@ -136,7 +152,7 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ## Copyright
 
-Copyright © 2018-2021 [Hadenlabs](https://hadenlabs.com)
+Copyright © 2018-2022 [Hadenlabs](https://hadenlabs.com)
 
 ## Trademarks
 
