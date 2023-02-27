@@ -26,10 +26,9 @@ This is a list of plugins that need to be installed previously to enjoy all the 
 
 ## Installation
 
-<!-- Space: ZshApss -->
-<!-- Parent: Project -->
-<!-- Title: Project Installation Oh-My-Zsh -->
-
+<!-- Space: Projects -->
+<!-- Parent: ZshApps -->
+<!-- Title: Installation Oh-My-Zsh ZshApps -->
 <!-- Label: ZshApss -->
 <!-- Label: Project -->
 <!-- Label: Installation -->
@@ -41,43 +40,41 @@ This is a list of plugins that need to be installed previously to enjoy all the 
 
 If you're using [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh), install this plugin by doing the following:
 
-1.  Go to your ohmyzsh custom plugins directory -`cd ~/.ohmyzsh/custom/plugins`
-2.  Clone the plugin `bash git clone https://github.com/luismayta/zsh-apps`bash
-3.  Edit your `.zshrc` and add `plugins=( ... zsh-apps )` to your list of plugins
-4.  Open a new terminal and enjoy!
-    <!-- Space: ZshApss -->
-    <!-- Parent: Project -->
-    <!-- Title: Project Installation Antigen -->
-
-<!-- Label: ZshApss -->
-<!-- Label: Project -->
-<!-- Label: Installation -->
-<!-- Label: Antigen -->
-<!-- Include: docs/disclaimer.md -->
-<!-- Include: ac:toc -->
+1. Go to your ohmyzsh custom plugins directory -`cd ~/.ohmyzsh/custom/plugins`
+2. Clone the plugin `bash git clone https://github.com/luismayta/zsh-apps`bash
+3. Edit your `.zshrc` and add `plugins=( ... zsh-apps )` to your list of plugins
+4. Open a new terminal and enjoy!
+   <!-- Space: Projects -->
+   <!-- Parent: ZshApps -->
+   <!-- Title: Installation Antigen ZshApps -->
+   <!-- Label: ZshApss -->
+   <!-- Label: Project -->
+   <!-- Label: Installation -->
+   <!-- Label: Antigen -->
+   <!-- Include: docs/disclaimer.md -->
+   <!-- Include: ac:toc -->
 
 ### [antigen](https://github.com/zsh-users/antigen) users
 
 If you're using [Antigen](https://github.com/zsh-users/antigen), install this plugin by doing the following:
 
-1.  Add `antigen bundle luismayta/zsh-apps` to your `.zshrc` where you're adding your other plugins.
-2.  Either open a new terminal to force zsh to load the new plugin, or run `antigen bundle luismayta/zsh-apps` in a running zsh session.
-3.  Enjoy!
-    <!-- Space: ZshApss -->
-    <!-- Parent: Project -->
-    <!-- Title: Project Installation Antibody -->
-
-<!-- Label: ZshApss -->
-<!-- Label: Project -->
-<!-- Label: Installation -->
-<!-- Include: docs/disclaimer.md -->
-<!-- Include: ac:toc -->
+1. Add `antigen bundle luismayta/zsh-apps` to your `.zshrc` where you're adding your other plugins.
+2. Either open a new terminal to force zsh to load the new plugin, or run `antigen bundle luismayta/zsh-apps` in a running zsh session.
+3. Enjoy!
+   <!-- Space: Projects -->
+   <!-- Parent: ZshApps -->
+   <!-- Title: Installation Antibody ZshApps -->
+   <!-- Label: ZshApss -->
+   <!-- Label: Project -->
+   <!-- Label: Installation -->
+   <!-- Include: docs/disclaimer.md -->
+   <!-- Include: ac:toc -->
 
 ### [antibody](https://github.com/getantibody/antibody) users
 
 If you're using [Antibody](https://github.com/getantibody/antibody), install this plugin by doing the following:
 
-1.  Add :
+1. Add :
 
 ```{.sourceCode .bash}
 antibody bundle luismayta/zsh-apps
@@ -85,17 +82,15 @@ antibody bundle luismayta/zsh-apps
 
 to your `.zshrc` where you're adding your other plugins.
 
-2.  Either open a new terminal to force zsh to load the new plugin, or run `antibody bundle luismayta/zsh-apps` in a running zsh session.
-3.  Enjoy!
+2. Either open a new terminal to force zsh to load the new plugin, or run `antibody bundle luismayta/zsh-apps` in a running zsh session.
+3. Enjoy!
 
 ## Usage
 
 # How to use this project
 
-## Replace name project to New Project
-
 ```bash
-agr 'zsh-apps' 'new-project'
+task setup
 ```
 
 ## Examples
@@ -107,12 +102,11 @@ agr 'zsh-apps' 'new-project'
 <!-- Include: ./../disclaimer.md -->
 <!-- Include: ac:toc -->
 
-### common
+### Common
 
- <!-- Space: ZshApss -->
-<!-- Parent: Project -->
-<!-- Title: Functions -->
-
+ <!-- Space: Projects -->
+<!-- Parent: ZshApps -->
+<!-- Title: Functions ZshApps -->
 <!-- Label: Functions -->
 <!-- Include: docs/disclaimer.md -->
 <!-- Include: ac:toc -->
@@ -152,7 +146,7 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ## Copyright
 
-Copyright © 2018-2022 [Hadenlabs](https://hadenlabs.com)
+Copyright © 2018-2023 [Hadenlabs](https://hadenlabs.com)
 
 ## Trademarks
 
