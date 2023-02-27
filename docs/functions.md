@@ -1,7 +1,6 @@
-<!-- Space: ZshApss -->
-<!-- Parent: Project -->
-<!-- Title: Functions -->
-
+<!-- Space: Projects -->
+<!-- Parent: ZshApps -->
+<!-- Title: Functions ZshApps -->
 <!-- Label: Functions -->
 <!-- Include: docs/disclaimer.md -->
 <!-- Include: ac:toc -->
