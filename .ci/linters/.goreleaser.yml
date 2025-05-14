@@ -64,9 +64,10 @@ changelog:
     exclude:
       - "^docs:"
       - "^test:"
+
 release:
   github:
-    owner: hadenlabs
+    owner: luismayta
     name: zsh-apps
   draft: true
   prerelease: auto

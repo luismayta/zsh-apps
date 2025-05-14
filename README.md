@@ -1,3 +1,6 @@
+
+
+
 <!--
 
 
@@ -12,17 +15,35 @@
 
   -->
 
-[![Latest Release](https://img.shields.io/github/release/luismayta/zsh-apps)](https://github.com/luismayta/zsh-apps/releases) [![Lint](https://img.shields.io/github/workflow/status/luismayta/zsh-apps/lint-code)](https://github.com/luismayta/zsh-apps/actions?workflow=lint-code) [![CI](https://img.shields.io/github/workflow/status/luismayta/zsh-apps/ci)](https://github.com/luismayta/zsh-apps/actions?workflow=ci) [![Test](https://img.shields.io/github/workflow/status/luismayta/zsh-apps/test)](https://github.com/luismayta/zsh-apps/actions?workflow=test) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
+
+ [![Latest Release](https://img.shields.io/github/release/luismayta/zsh-apps)](https://github.com/luismayta/zsh-apps/releases) [![Lint](https://img.shields.io/github/workflow/status/luismayta/zsh-apps/lint-code)](https://github.com/luismayta/zsh-apps/actions?workflow=lint-code) [![CI](https://img.shields.io/github/workflow/status/luismayta/zsh-apps/ci)](https://github.com/luismayta/zsh-apps/actions?workflow=ci) [![Test](https://img.shields.io/github/workflow/status/luismayta/zsh-apps/test)](https://github.com/luismayta/zsh-apps/actions?workflow=test) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
 
 # zsh-apps
 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 ## Requirements
+
 
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
 - [gomplate](https://github.com/hairyhenderson/gomplate)
 - [python](https://www.python.org)
 - [taskfile](https://github.com/go-task/task)
+
+
 
 ## Installation
 
@@ -44,15 +65,15 @@ If you're using [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh), install this plug
 2. Clone the plugin `bash git clone https://github.com/luismayta/zsh-apps`bash
 3. Edit your `.zshrc` and add `plugins=( ... zsh-apps )` to your list of plugins
 4. Open a new terminal and enjoy!
-   <!-- Space: Projects -->
-   <!-- Parent: ZshApps -->
-   <!-- Title: Installation Antigen ZshApps -->
-   <!-- Label: ZshApss -->
-   <!-- Label: Project -->
-   <!-- Label: Installation -->
-   <!-- Label: Antigen -->
-   <!-- Include: docs/disclaimer.md -->
-   <!-- Include: ac:toc -->
+<!-- Space: Projects -->
+<!-- Parent: ZshApps -->
+<!-- Title: Installation Antigen ZshApps -->
+<!-- Label: ZshApss -->
+<!-- Label: Project -->
+<!-- Label: Installation -->
+<!-- Label: Antigen -->
+<!-- Include: docs/disclaimer.md -->
+<!-- Include: ac:toc -->
 
 ### [antigen](https://github.com/zsh-users/antigen) users
 
@@ -61,14 +82,14 @@ If you're using [Antigen](https://github.com/zsh-users/antigen), install this pl
 1. Add `antigen bundle luismayta/zsh-apps` to your `.zshrc` where you're adding your other plugins.
 2. Either open a new terminal to force zsh to load the new plugin, or run `antigen bundle luismayta/zsh-apps` in a running zsh session.
 3. Enjoy!
-   <!-- Space: Projects -->
-   <!-- Parent: ZshApps -->
-   <!-- Title: Installation Antibody ZshApps -->
-   <!-- Label: ZshApss -->
-   <!-- Label: Project -->
-   <!-- Label: Installation -->
-   <!-- Include: docs/disclaimer.md -->
-   <!-- Include: ac:toc -->
+<!-- Space: Projects -->
+<!-- Parent: ZshApps -->
+<!-- Title: Installation Antibody ZshApps -->
+<!-- Label: ZshApss -->
+<!-- Label: Project -->
+<!-- Label: Installation -->
+<!-- Include: docs/disclaimer.md -->
+<!-- Include: ac:toc -->
 
 ### [antibody](https://github.com/getantibody/antibody) users
 
@@ -85,6 +106,9 @@ to your `.zshrc` where you're adding your other plugins.
 2. Either open a new terminal to force zsh to load the new plugin, or run `antibody bundle luismayta/zsh-apps` in a running zsh session.
 3. Enjoy!
 
+
+
+
 ## Usage
 
 # How to use this project
@@ -92,6 +116,12 @@ to your `.zshrc` where you're adding your other plugins.
 ```bash
 task setup
 ```
+
+
+
+
+
+
 
 ## Examples
 
@@ -102,7 +132,15 @@ task setup
 <!-- Include: ./../disclaimer.md -->
 <!-- Include: ac:toc -->
 
-### Common
+## Common
+
+### Install Dependencies
+
+```bash
+task setup
+```
+
+
 
  <!-- Space: Projects -->
 <!-- Parent: ZshApps -->
@@ -119,11 +157,17 @@ zsh apps includes a small utility `apps` to fetch and install new packages.
 
 Install apps with nativefier `name` `url`.
 
+
+
+
+
+
 ## Help
 
 **Got a question?**
 
 File a GitHub [issue](https://github.com/luismayta/zsh-apps/issues).
+
 
 ## Contributing
 
@@ -141,21 +185,37 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ### Backwards compatibility in `0.0.z` and `0.y.z` version
 
-- In the context of initial development, backwards compatibility in versions `0.0.z` is **not guaranteed** when `z` is increased. (Initial development)
-- In the context of pre-release, backwards compatibility in versions `0.y.z` is **not guaranteed** when `y` is increased. (Pre-release)
+- In the context of initial development, backwards compatibility in versions `0.0.z` is **not guaranteed** when `z` is
+  increased. (Initial development)
+- In the context of pre-release, backwards compatibility in versions `0.y.z` is **not guaranteed** when `y` is
+  increased. (Pre-release)
+
+
+
 
 ## Copyright
 
-Copyright © 2018-2023 [Hadenlabs](https://hadenlabs.com)
+Copyright © 2018-2025 [Hadenlabs](https://hadenlabs.com)
+
+
 
 ## Trademarks
 
 All other trademarks referenced herein are the property of their respective owners.
 
+
+
+
+
+
 ## License
 
 The code and styles are licensed under the LGPL-3.0 license [See project license.](LICENSE).
 
+
+
 ## Don't forget to 🌟 Star 🌟 the repo if you like zsh-apps
 
+
 [Your feedback is appreciated](https://github.com/luismayta/zsh-apps/issues)
+
