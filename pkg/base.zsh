@@ -5,10 +5,6 @@ function apps::upgrade {
     message_warning "method not implement"
 }
 
-function apps::install {
-    apps::internal::native::make "${1}" "${2}"
-}
-
-function apps::install::jira {
-    apps::internal::jira::install "${1}"
+function apps::packages::install {
+  apps::internal::packages::install
 }
