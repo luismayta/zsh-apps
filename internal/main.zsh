@@ -14,6 +14,8 @@ function apps::internal::main::factory {
         source "${ZSH_APPS_PATH}"/internal/linux.zsh
       ;;
     esac
+    # shellcheck source=/dev/null
+    source "${ZSH_APPS_PATH}"/internal/helper.zsh
 }
 
 apps::internal::main::factory
