@@ -10,7 +10,9 @@ export APPS_JETBRAINS=(
     intellij-idea-ce
 )
 export APPS_COMMUNICATION=(discord)
+
 export APPS_KNOWLEDGE=(obsidian drawio)
+
 export APPS_DEVOPS=(
   ngrok
   unite
@@ -26,7 +28,7 @@ export APPS_DATABASE_CLIENTS=(
 
 export APPS_BROWSER=(
   arc
-  brave
+  brave-browser
 )
 
 export APPS_ANDROID=(
@@ -40,12 +42,20 @@ export APPS_MOBILE=(
   fastlane
 )
 
+export APPS_VPN_CLIENTS=(
+    openvpn
+    tunnelblick
+    wireguard
+    wireguard-tools
+)
+
 export APPS_PROJECT_MANAGEMENT=(
   jira-cli
 )
 
 export APPS_PACKAGES=(
     "${APPS_IDE_TOOLS[@]}"
+    "${APPS_VPN_CLIENTS[@]}"
     "${APPS_JETBRAINS[@]}"
     "${APPS_COMMUNICATION[@]}"
     "${APPS_KNOWLEDGE[@]}"
