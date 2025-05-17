@@ -18,6 +18,12 @@ export APPS_DEVOPS=(
   multipass
 )
 
+export APPS_DATABASE_CLIENTS=(
+  dbeaver-community
+  beekeeper-studio
+  redisinsight             # GUI Redis
+)
+
 export APPS_BROWSER=(
   arc
   brave
@@ -47,5 +53,6 @@ export APPS_PACKAGES=(
     "${APPS_BROWSER[@]}"
     "${APPS_ANDROID[@]}"
     "${APPS_MOBILE[@]}"
+    "${APPS_DATABASE_CLIENTS[@]}"
     "${APPS_PROJECT_MANAGEMENT[@]}"
 )
