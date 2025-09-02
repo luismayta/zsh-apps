@@ -165,3 +165,6 @@ The code and styles are licensed under the LGPL-3.0 license [See project license
 ## Don't forget to 🌟 Star 🌟 the repo if you like zsh-apps
 
 [Your feedback is appreciated](https://github.com/luismayta/zsh-apps/issues)
+
+
+<!-- Security scan triggered at 2025-09-02 15:59:48 -->
